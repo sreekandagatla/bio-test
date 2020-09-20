@@ -216,13 +216,14 @@ public class BiometricController {
 		IndexFacesResult indexFacesResult = rekognitionClient.indexFaces(indexFacesRequest);
 
 
-		System.out.println("Results for " + object);
+		/*System.out.println("Results for " + object);
 		System.out.println("Faces indexed:"); 
 		List<FaceRecord> faceRecords =		  indexFacesResult.getFaceRecords(); 
 		for (FaceRecord faceRecord : faceRecords)
 		{ System.out.println("  Face ID: " + faceRecord.getFace().getFaceId());
 		System.out.println("  Location:" +
 				faceRecord.getFaceDetail().getBoundingBox().toString()); }
+				*/
 
 
 
@@ -233,7 +234,7 @@ public class BiometricController {
 		AmazonRekognition amazonRekognition = AmazonRekognitionClientBuilder.defaultClient();
 
 
-		System.out.println("Listing collections");
+		//System.out.println("Listing collections");
 		int limit = 10;
 		ListCollectionsResult listCollectionsResult = null;
 		String paginationToken = null;
@@ -248,7 +249,7 @@ public class BiometricController {
 
 			List < String > collectionIds = listCollectionsResult.getCollectionIds();
 			for (String resultId: collectionIds) {
-				System.out.println(resultId);
+				//System.out.println(resultId);
 				if(resultId.equalsIgnoreCase(collectionId)) {
 					exists = true;
 					break;
@@ -269,13 +270,13 @@ public class BiometricController {
 		final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.US_EAST_1).build();
 		ListObjectsV2Result result = s3.listObjectsV2(bucketName);
 		List<S3ObjectSummary> s3objectsummaryList = result.getObjectSummaries();
-		s3objectsummaryList.forEach(x -> {
-			cleanExistingCollection(collectionId);
-			createCollection(collectionId);
-
-			addFacesToCollection(collectionId,bucketName);
+		cleanExistingCollection(collectionId);
+		createCollection(collectionId);
+		addFacesToCollection(collectionId,bucketName);
+		s3objectsummaryList.forEach(x -> {			
 			deleteFaceFromCollection(collectionId,x.getKey());
 			searchFaces(collectionId, bucketName, x.getKey());
+			indexFaces(collectionId, bucketName, x.getKey());
 
 		});
 
@@ -327,12 +328,12 @@ public class BiometricController {
 
 		DeleteFacesResult deleteFacesResult=rekognitionClient.deleteFaces(deleteFacesRequest);
 
-
-		List < String > faceRecords = deleteFacesResult.getDeletedFaces();
-		System.out.println(Integer.toString(faceRecords.size()) + " face(s) deleted:");
-		for (String face: faceRecords) {
-			System.out.println("FaceID: " + face);
-		}
+		/*
+		 * List < String > faceRecords = deleteFacesResult.getDeletedFaces();
+		 * System.out.println(Integer.toString(faceRecords.size()) +
+		 * " face(s) deleted:"); for (String face: faceRecords) {
+		 * System.out.println("FaceID: " + face); }
+		 */
 
 	}
 
@@ -342,7 +343,7 @@ public class BiometricController {
 		ObjectMapper objectMapper = new ObjectMapper();
 
 		ListFacesResult listFacesResult = null;
-		System.out.println("Faces in collection " + collectionId);
+		//System.out.println("Faces in collection " + collectionId);
 
 		String paginationToken = null;
 		do {
@@ -358,7 +359,10 @@ public class BiometricController {
 			listFacesResult =  rekognitionClient.listFaces(listFacesRequest);
 			List < Face > faces = listFacesResult.getFaces();
 			for (Face face: faces) {
-				try {
+				if(face.getExternalImageId().equalsIgnoreCase(object)) {
+					return face.getFaceId();
+				}
+				/*try {
 					System.out.println(objectMapper.writerWithDefaultPrettyPrinter()
 							.writeValueAsString(face));
 					if(face.getExternalImageId().equalsIgnoreCase(object)) {
@@ -367,7 +371,7 @@ public class BiometricController {
 				} catch (JsonProcessingException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
-				}
+				}*/
 			}
 		} while (listFacesResult != null && listFacesResult.getNextToken() !=
 				null);
