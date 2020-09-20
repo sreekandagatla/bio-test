@@ -1,0 +1,32 @@
+server:
+    port: 8080
+spring:
+  application:
+    name: dojo-api
+  http:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 20MB
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:h2:mem:dojo-app;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    platform: h2
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+    hikari:
+            auto-commit: false
+  jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+    database-platform: org.hibernate.dialect.H2Dialect
+    database: POSTGRESQL
+    show-sql: true
+# Specifying the following key entries in mixed cases due to YAML/Spring-boot limitation...    
+authHeaderValue: x-api-key
+authHeaderValue: GtJk9fqeCV5W99H7g65kH6S6pWLE0JBw51lYjYH3
+awsApiGateWayUri: https://aztj5hht4a.execute-api.us-east-1.amazonaws.com/dev
+multiModalQueryByImageUri: https://aztj5hht4a.execute-api.us-east-1.amazonaws.com/dev/v3/multimodal
+multiModalQueryByImageUriDirect: http://54.87.37.76:5001/v3/multimodal

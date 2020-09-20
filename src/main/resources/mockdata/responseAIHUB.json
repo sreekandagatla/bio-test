@@ -1,0 +1,2324 @@
+{
+  "results": [
+    {
+      "image_file": "hr180115/87750471_2.JPG",
+      "colors": [
+        {
+          "color": "Smoky black",
+          "rgb": [
+            9,
+            9,
+            9
+          ]
+        },
+        {
+          "color": "Isabelline",
+          "rgb": [
+            237,
+            237,
+            237
+          ]
+        },
+        {
+          "color": "Rich black (FOGRA39)",
+          "rgb": [
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "color": "Gray (web)",
+          "rgb": [
+            124,
+            124,
+            124
+          ]
+        },
+        {
+          "color": "Davy's grey",
+          "rgb": [
+            88,
+            88,
+            88
+          ]
+        },
+        {
+          "color": "Old silver",
+          "rgb": [
+            132,
+            132,
+            132
+          ]
+        },
+        {
+          "color": "Nickel",
+          "rgb": [
+            116,
+            116,
+            116
+          ]
+        },
+        {
+          "color": "Jet",
+          "rgb": [
+            52,
+            52,
+            52
+          ]
+        },
+        {
+          "color": "Black olive",
+          "rgb": [
+            60,
+            60,
+            60
+          ]
+        },
+        {
+          "color": "Raisin black",
+          "rgb": [
+            38,
+            38,
+            38
+          ]
+        }
+      ],
+      "ocr": "ABRA COFFEE",
+      "metadata": {
+        "serial-number": "87750471",
+        "mark-text": "ABRA COFFEE",
+        "file-name": "87750471_2.JPG",
+        "mark-entered": "ABRA COFFEE",
+        "services": [
+          {
+            "sequence-number": "1",
+            "description-text": "coffee shops",
+            "filing-basis-current-1b-in": "Y"
+          },
+          {
+            "sequence-number": "2",
+            "description-text": "coffee",
+            "filing-basis-current-1a-in": "Y",
+            "first-use-anywhere-date": "20180104",
+            "first-use-in-commerce-date": "20180104",
+            "related-files": [
+              "87750471_3.JPG"
+            ],
+            "related-files-description": "photograph of product packaging bearing the mark"
+          }
+        ],
+        "case-file-owner": [
+          {
+            "legal-entity-type-code": "16",
+            "name": "Abra Coffee, LLC",
+            "street": "2001 Biscayne Blvd., Suite 2117",
+            "city": "Miami",
+            "state": "Florida (FL)",
+            "postal-code": "33137",
+            "country-name": "United States (USX)",
+            "state-organized": "Florida (FL)"
+          }
+        ],
+        "correspondence": [
+          {
+            "name": "Oliver A. Ruiz, Esq.",
+            "firm-name": "Malloy & Malloy, P.L.",
+            "street": "2800 S.W. 3rd Avenue",
+            "city": "Miami",
+            "state": "Florida (FL)",
+            "postal-code": "33129",
+            "country-name": "United States (USX)",
+            "phone": "305-858-8000",
+            "fax": "305-858-0008",
+            "email": "oruiz@malloylaw.com;msantana@malloylaw.com; filing@malloylaw.com"
+          }
+        ]
+      },
+      "design_type_code": "4",
+      "design_type_text": "STANDARD CHARACTER MARK",
+      "design_text": "ABRA COFFEE",
+      "design_desc": null,
+      "design_in_color": false,
+      "design_colors": null,
+      "design_color_locations": null,
+      "design_codes": [],
+      "design_code": [],
+      "total_results": 1234,
+      "score": 1,
+      "id": "87750471_2",
+      "BM25_score": 10.792504,
+      "text_score": 1,
+      "image_score": 0,
+      "color": [
+        "Smoky black",
+        "Isabelline",
+        "Rich black (FOGRA39)",
+        "Gray (web)",
+        "Davy's grey",
+        "Old silver",
+        "Nickel",
+        "Jet",
+        "Black olive",
+        "Raisin black"
+      ],
+      "description": [],
+      "image_path": "hr180115/87750471_2.JPG",
+      "trademark": [
+        "ABRA COFFEE"
+      ],
+      "highlights": {
+        "trademark": [
+          "ABRA <em>COFFEE</em>"
+        ]
+      }
+    },
+    {
+      "image_file": "hr180109/87745552_2.JPG",
+      "colors": [
+        {
+          "color": "Smoky black",
+          "rgb": [
+            8,
+            8,
+            8
+          ]
+        },
+        {
+          "color": "Isabelline",
+          "rgb": [
+            237,
+            237,
+            237
+          ]
+        },
+        {
+          "color": "Rich black (FOGRA39)",
+          "rgb": [
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "color": "Gray (web)",
+          "rgb": [
+            124,
+            124,
+            124
+          ]
+        },
+        {
+          "color": "Davy's grey",
+          "rgb": [
+            90,
+            90,
+            90
+          ]
+        },
+        {
+          "color": "Old silver",
+          "rgb": [
+            132,
+            132,
+            132
+          ]
+        },
+        {
+          "color": "Nickel",
+          "rgb": [
+            116,
+            116,
+            116
+          ]
+        },
+        {
+          "color": "Jet",
+          "rgb": [
+            52,
+            52,
+            52
+          ]
+        },
+        {
+          "color": "Charleston green",
+          "rgb": [
+            40,
+            40,
+            40
+          ]
+        },
+        {
+          "color": "Black olive",
+          "rgb": [
+            60,
+            60,
+            60
+          ]
+        }
+      ],
+      "ocr": "BURLY COFFEE",
+      "metadata": {
+        "serial-number": "87745552",
+        "mark-text": "BURLY COFFEE",
+        "file-name": "87745552_2.JPG",
+        "mark-entered": "BURLY COFFEE",
+        "services": [
+          {
+            "sequence-number": "1",
+            "class-code": "043",
+            "description-text": "Coffee shops; Coffee-house and snack-bar services",
+            "filing-basis-current-1a-in": "Y",
+            "first-use-anywhere-date": "20140318",
+            "first-use-in-commerce-date": "20141031",
+            "related-files": [
+              "87745552_3.JPG",
+              "87745552_4.JPG",
+              "87745552_5.JPG",
+              "87745552_6.JPG"
+            ],
+            "related-files-description": "Burly Coffee cup; exterior of coffee shop; coffee shop menu; coffee shop customer reward card"
+          }
+        ],
+        "case-file-owner": [
+          {
+            "legal-entity-type-code": "03",
+            "name": "Burly Cafe Inc.",
+            "street": "832 Dekalb Ave. Unit D",
+            "city": "Brooklyn",
+            "state": "New York (NY)",
+            "postal-code": "11221",
+            "country-name": "United States (USX)",
+            "email": "tomwcolella@gmail.com",
+            "incorporated-in-state-code": "New York (NY)",
+            "website-address": "www.burlycoffee.com"
+          }
+        ],
+        "correspondence": [
+          {
+            "name": "Shana Fried",
+            "firm-name": "The Fried Firm PLLC",
+            "street": "231 Front Street, Ste. 116",
+            "city": "Brooklyn",
+            "state": "New York (NY)",
+            "postal-code": "11201",
+            "country-name": "United States (USX)",
+            "phone": "718-422-0500",
+            "email": "everybody@thefriedfirm.com;shana@thefriedfirm.com"
+          }
+        ]
+      },
+      "design_type_code": "4",
+      "design_type_text": "STANDARD CHARACTER MARK",
+      "design_text": "BURLY COFFEE",
+      "design_desc": null,
+      "design_in_color": false,
+      "design_colors": null,
+      "design_color_locations": null,
+      "design_codes": [],
+      "design_code": [],
+      "total_results": 1234,
+      "score": 0.880704514911461,
+      "id": "87745552_2",
+      "BM25_score": 9.505007,
+      "text_score": 0.880704514911461,
+      "image_score": 0,
+      "color": [
+        "Smoky black",
+        "Isabelline",
+        "Rich black (FOGRA39)",
+        "Gray (web)",
+        "Davy's grey",
+        "Old silver",
+        "Nickel",
+        "Jet",
+        "Charleston green",
+        "Black olive"
+      ],
+      "description": [],
+      "image_path": "hr180109/87745552_2.JPG",
+      "trademark": [
+        "BURLY COFFEE"
+      ],
+      "highlights": {
+        "trademark": [
+          "BURLY <em>COFFEE</em>"
+        ]
+      }
+    },
+    {
+      "image_file": "hr180131/87773204_2.JPG",
+      "colors": [
+        {
+          "color": "Smoky black",
+          "rgb": [
+            12,
+            12,
+            12
+          ]
+        },
+        {
+          "color": "Alabaster",
+          "rgb": [
+            234,
+            234,
+            234
+          ]
+        },
+        {
+          "color": "Gray (web)",
+          "rgb": [
+            124,
+            124,
+            124
+          ]
+        },
+        {
+          "color": "Old silver",
+          "rgb": [
+            132,
+            132,
+            132
+          ]
+        },
+        {
+          "color": "Rich black (FOGRA39)",
+          "rgb": [
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "color": "Davy's grey",
+          "rgb": [
+            80,
+            80,
+            80
+          ]
+        },
+        {
+          "color": "Nickel",
+          "rgb": [
+            116,
+            116,
+            116
+          ]
+        },
+        {
+          "color": "Black olive",
+          "rgb": [
+            60,
+            60,
+            60
+          ]
+        },
+        {
+          "color": "Jet",
+          "rgb": [
+            52,
+            52,
+            52
+          ]
+        },
+        {
+          "color": "Charleston green",
+          "rgb": [
+            39,
+            39,
+            39
+          ]
+        }
+      ],
+      "ocr": "Farm To Cup",
+      "metadata": {
+        "serial-number": "87773204",
+        "mark-text": "Farm To Cup",
+        "file-name": "87773204_2.JPG",
+        "mark-entered": "Farm To Cup",
+        "services": [
+          {
+            "sequence-number": "1",
+            "class-code": "029",
+            "description-text": "Dairy-based beverages; Milk; Milk beverages, milk predominating; Milk products excluding ice cream, ice milk and frozen yogurt; Milk substitutes; Beverages made from milk; Milk-based beverage containing coffee",
+            "filing-basis-current-1b-in": "Y"
+          },
+          {
+            "sequence-number": "2",
+            "class-code": "030",
+            "description-text": "Coffee; Coffee and tea; Coffee based beverages; Coffee beans; Coffee pods; Coffee-based beverage containing milk; Coffee-based beverages; Coffee-based iced beverages; Ground coffee beans; Iced coffee; Prepared coffee and coffee-based beverages; Roasted coffee beans",
+            "filing-basis-current-1b-in": "Y"
+          },
+          {
+            "sequence-number": "3",
+            "class-code": "043",
+            "description-text": "Coffee and juice bar services; Coffee and tea bars; Coffee bars; Coffee shops; Coffee-house and snack-bar services",
+            "filing-basis-current-1b-in": "Y"
+          }
+        ],
+        "case-file-owner": [
+          {
+            "legal-entity-type-code": "03",
+            "name": "Peet's Coffee",
+            "street": "1400 park avenue",
+            "city": "emeryville",
+            "state": "California (CA)",
+            "postal-code": "94608",
+            "country-name": "United States (USX)",
+            "email": "jcoletta@peets.com",
+            "phone": "303-589-3178",
+            "incorporated-in-state-code": "California (CA)"
+          }
+        ],
+        "correspondence": [
+          {
+            "name": "Peet's Coffee",
+            "firm-name": "Peet's Coffee",
+            "street": "1400 park avenue",
+            "city": "emeryville",
+            "state": "California (CA)",
+            "postal-code": "94608",
+            "country-name": "United States (USX)",
+            "phone": "303-589-3178",
+            "email": "jcoletta@peets.com"
+          }
+        ]
+      },
+      "design_type_code": "4",
+      "design_type_text": "STANDARD CHARACTER MARK",
+      "design_text": "FARM TO CUP",
+      "design_desc": null,
+      "design_in_color": false,
+      "design_colors": null,
+      "design_color_locations": null,
+      "design_codes": [],
+      "design_code": [],
+      "total_results": 1234,
+      "score": 0.8701417205868073,
+      "id": "87773204_2",
+      "BM25_score": 9.391008,
+      "text_score": 0.8701417205868073,
+      "image_score": 0,
+      "color": [
+        "Smoky black",
+        "Alabaster",
+        "Gray (web)",
+        "Old silver",
+        "Rich black (FOGRA39)",
+        "Davy's grey",
+        "Nickel",
+        "Black olive",
+        "Jet",
+        "Charleston green"
+      ],
+      "description": [],
+      "image_path": "hr180131/87773204_2.JPG",
+      "trademark": [
+        "Farm To Cup"
+      ],
+      "highlights": {}
+    },
+    {
+      "image_file": "hr180131/87773208_2.JPG",
+      "colors": [
+        {
+          "color": "Smoky black",
+          "rgb": [
+            9,
+            9,
+            9
+          ]
+        },
+        {
+          "color": "Alabaster",
+          "rgb": [
+            234,
+            234,
+            234
+          ]
+        },
+        {
+          "color": "Rich black (FOGRA39)",
+          "rgb": [
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "color": "Davy's grey",
+          "rgb": [
+            85,
+            85,
+            85
+          ]
+        },
+        {
+          "color": "Gray (web)",
+          "rgb": [
+            124,
+            124,
+            124
+          ]
+        },
+        {
+          "color": "Nickel",
+          "rgb": [
+            116,
+            116,
+            116
+          ]
+        },
+        {
+          "color": "Old silver",
+          "rgb": [
+            132,
+            132,
+            132
+          ]
+        },
+        {
+          "color": "Black olive",
+          "rgb": [
+            60,
+            60,
+            60
+          ]
+        },
+        {
+          "color": "Charleston green",
+          "rgb": [
+            39,
+            39,
+            39
+          ]
+        },
+        {
+          "color": "Jet",
+          "rgb": [
+            52,
+            52,
+            52
+          ]
+        }
+      ],
+      "ocr": "World Bean Tour",
+      "metadata": {
+        "serial-number": "87773208",
+        "mark-text": "World Bean Tour",
+        "file-name": "87773208_2.JPG",
+        "mark-entered": "World Bean Tour",
+        "services": [
+          {
+            "sequence-number": "1",
+            "class-code": "011",
+            "description-text": "Coffee roasters",
+            "filing-basis-current-1b-in": "Y"
+          },
+          {
+            "sequence-number": "2",
+            "class-code": "030",
+            "description-text": "Coffee; Coffee beans; Coffee pods; Green coffee",
+            "filing-basis-current-1b-in": "Y"
+          },
+          {
+            "sequence-number": "3",
+            "class-code": "043",
+            "description-text": "Coffee and tea bars; Coffee bars",
+            "filing-basis-current-1b-in": "Y"
+          }
+        ],
+        "case-file-owner": [
+          {
+            "legal-entity-type-code": "03",
+            "name": "Peet's Coffee",
+            "street": "1400 park avenue",
+            "internal-address": "1400 park avenue",
+            "city": "emeryville",
+            "state": "California (CA)",
+            "postal-code": "94608",
+            "country-name": "United States (USX)",
+            "email": "jcoletta@peets.com",
+            "phone": "303-589-3178",
+            "fax": "3035893178",
+            "incorporated-in-state-code": "Virginia (VA)"
+          }
+        ],
+        "correspondence": [
+          {
+            "name": "Peet's Coffee",
+            "firm-name": "Peet's Coffee",
+            "street": "1400 park avenue",
+            "internal-address": "1400 park avenue",
+            "city": "emeryville",
+            "state": "California (CA)",
+            "postal-code": "94608",
+            "country-name": "United States (USX)",
+            "phone": "303-589-3178",
+            "fax": "3035893178",
+            "email": "jcoletta@peets.com"
+          }
+        ]
+      },
+      "design_type_code": "4",
+      "design_type_text": "STANDARD CHARACTER MARK",
+      "design_text": "WORLD BEAN TOUR",
+      "design_desc": null,
+      "design_in_color": false,
+      "design_colors": null,
+      "design_color_locations": null,
+      "design_codes": [],
+      "design_code": [],
+      "total_results": 1234,
+      "score": 0.8701417205868073,
+      "id": "87773208_2",
+      "BM25_score": 9.391008,
+      "text_score": 0.8701417205868073,
+      "image_score": 0,
+      "color": [
+        "Smoky black",
+        "Alabaster",
+        "Rich black (FOGRA39)",
+        "Davy's grey",
+        "Gray (web)",
+        "Nickel",
+        "Old silver",
+        "Black olive",
+        "Charleston green",
+        "Jet"
+      ],
+      "description": [],
+      "image_path": "hr180131/87773208_2.JPG",
+      "trademark": [
+        "World Bean Tour"
+      ],
+      "highlights": {}
+    },
+    {
+      "image_file": "hr180119/87757576_2.JPG",
+      "colors": [
+        {
+          "color": "Deep saffron",
+          "rgb": [
+            245,
+            157,
+            64
+          ]
+        },
+        {
+          "color": "Floral white",
+          "rgb": [
+            250,
+            248,
+            240
+          ]
+        },
+        {
+          "color": "Deep saffron",
+          "rgb": [
+            246,
+            157,
+            62
+          ]
+        },
+        {
+          "color": "Gold (Crayola)",
+          "rgb": [
+            243,
+            193,
+            139
+          ]
+        },
+        {
+          "color": "Sandy brown",
+          "rgb": [
+            235,
+            168,
+            98
+          ]
+        },
+        {
+          "color": "Indian yellow",
+          "rgb": [
+            220,
+            160,
+            79
+          ]
+        },
+        {
+          "color": "Mellow apricot",
+          "rgb": [
+            252,
+            196,
+            108
+          ]
+        },
+        {
+          "color": "Bright yellow (Crayola)",
+          "rgb": [
+            251,
+            156,
+            26
+          ]
+        },
+        {
+          "color": "Desert sand",
+          "rgb": [
+            228,
+            196,
+            172
+          ]
+        },
+        {
+          "color": "Maximum yellow red",
+          "rgb": [
+            252,
+            180,
+            78
+          ]
+        }
+      ],
+      "ocr": "None",
+      "metadata": {
+        "serial-number": "87757576",
+        "file-name": "87757576_2.JPG",
+        "mark-text": "Wing Beans Coffee & Tea",
+        "services": [
+          {
+            "sequence-number": "1",
+            "class-code": "030",
+            "description-text": "Coffee and tea; Caffeine-free coffee; Ground coffee beans; Roasted coffee beans",
+            "filing-basis-current-1a-in": "Y",
+            "first-use-anywhere-date": "20140313",
+            "first-use-in-commerce-date": "20150701",
+            "related-files": [
+              "87757576_3.JPG"
+            ],
+            "related-files-description": "Logo on coffee bag, coffee package"
+          }
+        ],
+        "case-file-statement": [
+          {
+            "type-code": "DM",
+            "text": "The mark consists of Coffee bean with two wings."
+          }
+        ],
+        "case-file-owner": [
+          {
+            "legal-entity-type-code": "19",
+            "name": "Ham, Inhoo",
+            "dba-aka-text": "DBA Wing Beans LLC",
+            "street": "428 Lincoln St.",
+            "city": "Palisades Park",
+            "state": "New Jersey (NJ)",
+            "postal-code": "07650",
+            "country-name": "United States (USX)",
+            "email": "wingbeans@gmail.com",
+            "phone": "201-354-0036",
+            "state-organized": "New Jersey (NJ)",
+            "general-partner-name": "Inhoo Ham",
+            "website-address": "www.Wingbeanscoffee.com"
+          }
+        ],
+        "correspondence": [
+          {
+            "name": "Ham, Inhoo",
+            "firm-name": "Ham, Inhoo",
+            "street": "428 Lincoln St.",
+            "city": "Palisades Park",
+            "state": "New Jersey (NJ)",
+            "postal-code": "07650",
+            "country-name": "United States (USX)",
+            "phone": "201-354-0036",
+            "email": "wingbeans@gmail.com"
+          }
+        ]
+      },
+      "design_type_code": "3",
+      "design_type_text": "AN ILLUSTRATION DRAWING WHICH INCLUDES WORD(S)/ LETTER(S)/NUMBER(S)",
+      "design_text": "WING BEANS COFFEE & TEA",
+      "design_desc": "The mark consists of the design of a bean with wings above the wording \"WING BEANS\", which appears above \"COFFEE & TEA\".",
+      "design_in_color": true,
+      "design_colors": "Color is not claimed as a feature of the mark.",
+      "design_color_locations": null,
+      "design_codes": [
+        {
+          "code": "03.17.01",
+          "descriptions": [
+            "Wings, birds'"
+          ],
+          "code_0": 3,
+          "code_1": 17,
+          "code_2": 1
+        },
+        {
+          "code": "05.07.03",
+          "descriptions": [
+            "Coffee beans"
+          ],
+          "code_0": 5,
+          "code_1": 7,
+          "code_2": 3
+        }
+      ],
+      "design_code": [
+        "Wings, birds'",
+        "Coffee beans"
+      ],
+      "total_results": 1234,
+      "score": 0.8669939802663035,
+      "id": "87757576_2",
+      "BM25_score": 9.357036,
+      "text_score": 0.8669939802663035,
+      "image_score": 0,
+      "color": [
+        "Deep saffron",
+        "Floral white",
+        "Deep saffron",
+        "Gold (Crayola)",
+        "Sandy brown",
+        "Indian yellow",
+        "Mellow apricot",
+        "Bright yellow (Crayola)",
+        "Desert sand",
+        "Maximum yellow red"
+      ],
+      "description": [
+        "The mark consists of Coffee bean with two wings."
+      ],
+      "image_path": "hr180119/87757576_2.JPG",
+      "trademark": [
+        "Wing Beans Coffee & Tea"
+      ],
+      "highlights": {
+        "description": [
+          "The mark consists of <em>Coffee</em> bean with two wings."
+        ],
+        "trademark": [
+          "Wing Beans <em>Coffee</em> & Tea"
+        ]
+      }
+    },
+    {
+      "image_file": "hr180115/87750032_2.JPG",
+      "colors": [
+        {
+          "color": "Light gray",
+          "rgb": [
+            207,
+            207,
+            207
+          ]
+        },
+        {
+          "color": "Alabaster",
+          "rgb": [
+            235,
+            235,
+            235
+          ]
+        },
+        {
+          "color": "Eerie black",
+          "rgb": [
+            29,
+            29,
+            29
+          ]
+        },
+        {
+          "color": "Sonic silver",
+          "rgb": [
+            122,
+            122,
+            122
+          ]
+        },
+        {
+          "color": "Taupe gray",
+          "rgb": [
+            142,
+            142,
+            142
+          ]
+        },
+        {
+          "color": "Dark liver",
+          "rgb": [
+            79,
+            79,
+            79
+          ]
+        },
+        {
+          "color": "Rifle green",
+          "rgb": [
+            68,
+            68,
+            68
+          ]
+        },
+        {
+          "color": "Davy's grey",
+          "rgb": [
+            92,
+            92,
+            92
+          ]
+        },
+        {
+          "color": "Silver chalice",
+          "rgb": [
+            172,
+            172,
+            172
+          ]
+        },
+        {
+          "color": "Spanish gray",
+          "rgb": [
+            156,
+            156,
+            156
+          ]
+        }
+      ],
+      "ocr": "CRUISE COFFEE\nSTZ",
+      "metadata": {
+        "serial-number": "87750032",
+        "file-name": "87750032_2.JPG",
+        "mark-text": "COLD COFFEE CRUISE COFFEE",
+        "services": [
+          {
+            "sequence-number": "1",
+            "class-code": "030",
+            "description-text": "coffee, coffee drinks, flavored coffee drinks",
+            "filing-basis-current-1b-in": "Y"
+          }
+        ],
+        "case-file-statement": [
+          {
+            "type-code": "DM",
+            "text": "The mark consists of a multi bordered circle. Located at the top of the bordered circle are the words \"COLD COFFEE\". Inside of the circle is a sailboat, coffee bean along with the words CRUISE COFFEE."
+          }
+        ],
+        "case-file-owner": [
+          {
+            "legal-entity-type-code": "16",
+            "name": "Al-Masah Al-Fareeda Trading Co.",
+            "street": "P.O. Box 2706",
+            "city": "Hawally Code 32028",
+            "country-name": "Kuwait (KWX)",
+            "state-organized": "Kuwait (KWX)"
+          }
+        ],
+        "correspondence": [
+          {
+            "name": "Kevin G. Smith",
+            "firm-name": "Sughrue Mion, PLLC",
+            "street": "2100 Pennsylvania Ave., NW",
+            "city": "Washington",
+            "state": "District of Columbia (DC)",
+            "postal-code": "20037-3213",
+            "country-name": "United States (USX)",
+            "phone": "202-293-7060",
+            "fax": "202-293-7860",
+            "email": "tm@sughrue.com"
+          }
+        ]
+      },
+      "design_type_code": "3",
+      "design_type_text": "AN ILLUSTRATION DRAWING WHICH INCLUDES WORD(S)/ LETTER(S)/NUMBER(S)",
+      "design_text": "COLD COFFEE CRUISE COFFEE",
+      "design_desc": "The mark consists of a multi bordered circle. Located at the top of the bordered circle are the words \"COLD COFFEE\". Inside of the circle is a sailboat, coffee bean along with the words CRUISE COFFEE.",
+      "design_in_color": false,
+      "design_colors": "Color is not claimed as a feature of the mark.",
+      "design_color_locations": null,
+      "design_codes": [
+        {
+          "code": "05.07.03",
+          "descriptions": [
+            "Coffee beans"
+          ],
+          "code_0": 5,
+          "code_1": 7,
+          "code_2": 3
+        },
+        {
+          "code": "18.07.04",
+          "descriptions": [
+            "Schooners (boats)",
+            "Clippers (boats)",
+            "Ships with two and three masts, including brigs, clippers and schooners",
+            "Brigs (boats)"
+          ],
+          "code_0": 18,
+          "code_1": 7,
+          "code_2": 4
+        },
+        {
+          "code": "26.01.18",
+          "descriptions": [
+            "Concentric circles, three or more",
+            "Circles, three or more concentric",
+            "Three or more concentric circles"
+          ],
+          "code_0": 26,
+          "code_1": 1,
+          "code_2": 18
+        }
+      ],
+      "design_code": [
+        "Coffee beans",
+        "Schooners (boats)",
+        "Clippers (boats)",
+        "Ships with two and three masts, including brigs, clippers and schooners",
+        "Brigs (boats)",
+        "Concentric circles, three or more",
+        "Circles, three or more concentric",
+        "Three or more concentric circles"
+      ],
+      "total_results": 1234,
+      "score": 0.831085445972501,
+      "id": "87750032_2",
+      "BM25_score": 8.969493,
+      "text_score": 0.831085445972501,
+      "image_score": 0,
+      "color": [
+        "Light gray",
+        "Alabaster",
+        "Eerie black",
+        "Sonic silver",
+        "Taupe gray",
+        "Dark liver",
+        "Rifle green",
+        "Davy's grey",
+        "Silver chalice",
+        "Spanish gray"
+      ],
+      "description": [
+        "The mark consists of a multi bordered circle. Located at the top of the bordered circle are the words \"COLD COFFEE\". Inside of the circle is a sailboat, coffee bean along with the words CRUISE COFFEE."
+      ],
+      "image_path": "hr180115/87750032_2.JPG",
+      "trademark": [
+        "COLD COFFEE CRUISE COFFEE"
+      ],
+      "highlights": {
+        "description": [
+          "The mark consists of a multi bordered circle. Located at the top of the bordered circle are the words \"COLD <em>COFFEE</em>\". Inside of the circle is a sailboat, <em>coffee</em> bean along with the words CRUISE <em>COFFEE</em>."
+        ],
+        "trademark": [
+          "COLD <em>COFFEE</em> CRUISE <em>COFFEE</em>"
+        ]
+      }
+    },
+    {
+      "image_file": "hr180129/87768484_2.JPG",
+      "colors": [
+        {
+          "color": "Charcoal",
+          "rgb": [
+            44,
+            66,
+            87
+          ]
+        },
+        {
+          "color": "Eggshell",
+          "rgb": [
+            238,
+            231,
+            214
+          ]
+        },
+        {
+          "color": "Charcoal",
+          "rgb": [
+            41,
+            64,
+            85
+          ]
+        },
+        {
+          "color": "Roman silver",
+          "rgb": [
+            127,
+            139,
+            149
+          ]
+        },
+        {
+          "color": "Cadet grey",
+          "rgb": [
+            151,
+            167,
+            177
+          ]
+        },
+        {
+          "color": "Tuscan tan",
+          "rgb": [
+            177,
+            140,
+            98
+          ]
+        },
+        {
+          "color": "Black coral",
+          "rgb": [
+            82,
+            93,
+            103
+          ]
+        },
+        {
+          "color": "Cadet grey",
+          "rgb": [
+            141,
+            156,
+            172
+          ]
+        },
+        {
+          "color": "Wintergreen Dream",
+          "rgb": [
+            98,
+            118,
+            128
+          ]
+        },
+        {
+          "color": "Payne's grey",
+          "rgb": [
+            88,
+            106,
+            124
+          ]
+        }
+      ],
+      "ocr": "CHIRO\n& COFFEE",
+      "metadata": {
+        "serial-number": "87768484",
+        "file-name": "87768484_2.JPG",
+        "mark-text": "CHIRO & COFFEE",
+        "services": [
+          {
+            "sequence-number": "1",
+            "class-code": "043",
+            "description-text": "Coffee shops",
+            "filing-basis-current-1b-in": "Y"
+          },
+          {
+            "sequence-number": "2",
+            "class-code": "044",
+            "description-text": "Chiropractic services",
+            "filing-basis-current-1b-in": "Y"
+          }
+        ],
+        "case-file-statement": [
+          {
+            "type-code": "DM",
+            "text": "The mark consists of The word \"CHIRO\" (in dark blue) which stands for Chiropractic, \"&\" (in brown) stands for the word \"and\", \"COFFEE\" (in brown) stands for coffee/coffee shop; The logo is illustrated as a coffee cup (in blue) that has two human spines (in pale/tan) on top which represents hot steam coming from the coffee."
+          }
+        ],
+        "case-file-owner": [
+          {
+            "legal-entity-type-code": "03",
+            "name": "Jaaf, Ranj",
+            "dba-aka-text": "DBA Chiro & Coffee",
+            "street": "3400 Ave of the Arts, APT E323",
+            "city": "Costa Mesa",
+            "state": "California (CA)",
+            "postal-code": "92626",
+            "country-name": "United States (USX)",
+            "email": "ranj.jaaf@yahoo.com",
+            "phone": "215-584-7449",
+            "incorporated-in-state-code": "California (CA)"
+          }
+        ],
+        "correspondence": [
+          {
+            "name": "Jaaf, Ranj",
+            "firm-name": "Jaaf, Ranj",
+            "street": "3400 Ave of the Arts, APT E323",
+            "city": "Costa Mesa",
+            "state": "California (CA)",
+            "postal-code": "92626",
+            "country-name": "United States (USX)",
+            "phone": "215-584-7449",
+            "email": "ranj.jaaf@yahoo.com"
+          }
+        ]
+      },
+      "design_type_code": "3",
+      "design_type_text": "AN ILLUSTRATION DRAWING WHICH INCLUDES WORD(S)/ LETTER(S)/NUMBER(S)",
+      "design_text": "CHIRO & COFFEE",
+      "design_desc": "The mark consists of The word \"CHIRO\" (in dark blue) which stands for Chiropractic, \"&\" (in brown) stands for the word \"and\", \"COFFEE\" (in brown) stands for coffee/coffee shop; The logo is illustrated as a coffee cup (in blue) that has two human spines (in pale/tan) on top which represents hot steam coming from the coffee.",
+      "design_in_color": true,
+      "design_colors": "The color(s) dark blue, brown, pale, and tan is/are claimed as a feature of the mark.",
+      "design_color_locations": null,
+      "design_codes": [
+        {
+          "code": "01.15.05",
+          "descriptions": [
+            "Vapor",
+            "Steam",
+            "Smoke"
+          ],
+          "code_0": 1,
+          "code_1": 15,
+          "code_2": 5
+        },
+        {
+          "code": "02.11.25",
+          "descriptions": [
+            "Buttocks, human",
+            "Brain, human",
+            "Blood vessels, human",
+            "Human, other parts of the body",
+            "Intestines, human",
+            "Lungs, human",
+            "Nerves, human",
+            "Nose, human",
+            "Spine, human",
+            "Tongue, human"
+          ],
+          "code_0": 2,
+          "code_1": 11,
+          "code_2": 25
+        },
+        {
+          "code": "11.03.03",
+          "descriptions": [
+            "Coffee cups"
+          ],
+          "code_0": 11,
+          "code_1": 3,
+          "code_2": 3
+        }
+      ],
+      "design_code": [
+        "Vapor",
+        "Steam",
+        "Smoke",
+        "Buttocks, human",
+        "Brain, human",
+        "Blood vessels, human",
+        "Human, other parts of the body",
+        "Intestines, human",
+        "Lungs, human",
+        "Nerves, human",
+        "Nose, human",
+        "Spine, human",
+        "Tongue, human",
+        "Coffee cups"
+      ],
+      "total_results": 1234,
+      "score": 0.8266290195491243,
+      "id": "87768484_2",
+      "BM25_score": 8.921397,
+      "text_score": 0.8266290195491243,
+      "image_score": 0,
+      "color": [
+        "Charcoal",
+        "Eggshell",
+        "Charcoal",
+        "Roman silver",
+        "Cadet grey",
+        "Tuscan tan",
+        "Black coral",
+        "Cadet grey",
+        "Wintergreen Dream",
+        "Payne's grey"
+      ],
+      "description": [
+        "The mark consists of The word \"CHIRO\" (in dark blue) which stands for Chiropractic, \"&\" (in brown) stands for the word \"and\", \"COFFEE\" (in brown) stands for coffee/coffee shop; The logo is illustrated as a coffee cup (in blue) that has two human spines (in pale/tan) on top which represents hot steam coming from the coffee."
+      ],
+      "image_path": "hr180129/87768484_2.JPG",
+      "trademark": [
+        "CHIRO & COFFEE"
+      ],
+      "highlights": {
+        "description": [
+          "The mark consists of The word \"CHIRO\" (in dark blue) which stands for Chiropractic, \"&\" (in brown) stands for the word \"and\", \"<em>COFFEE</em>\" (in brown) stands for <em>coffee</em>/<em>coffee</em> shop; The logo is illustrated as a <em>coffee</em> cup (in blue) that has two human spines (in pale/tan) on top which represents hot steam coming from the <em>coffee</em>."
+        ],
+        "trademark": [
+          "CHIRO & <em>COFFEE</em>"
+        ]
+      }
+    },
+    {
+      "image_file": "hr180125/87765614_2.JPG",
+      "colors": [
+        {
+          "color": "Black coffee",
+          "rgb": [
+            53,
+            45,
+            38
+          ]
+        },
+        {
+          "color": "Bronze",
+          "rgb": [
+            206,
+            124,
+            67
+          ]
+        },
+        {
+          "color": "Black coffee",
+          "rgb": [
+            53,
+            45,
+            38
+          ]
+        },
+        {
+          "color": "Isabelline",
+          "rgb": [
+            248,
+            245,
+            238
+          ]
+        },
+        {
+          "color": "Grullo",
+          "rgb": [
+            176,
+            150,
+            130
+          ]
+        },
+        {
+          "color": "Gold (Crayola)",
+          "rgb": [
+            231,
+            184,
+            145
+          ]
+        },
+        {
+          "color": "Nickel",
+          "rgb": [
+            114,
+            116,
+            116
+          ]
+        },
+        {
+          "color": "Silver (Crayola)",
+          "rgb": [
+            214,
+            197,
+            182
+          ]
+        },
+        {
+          "color": "Silver chalice",
+          "rgb": [
+            176,
+            177,
+            177
+          ]
+        },
+        {
+          "color": "Granite gray",
+          "rgb": [
+            108,
+            92,
+            108
+          ]
+        }
+      ],
+      "ocr": "Eoros\ndi lest Prep\nExama TION S: TRATEGIES FOR P, ‘REPARING Orricers AND S UPERIORS",
+      "metadata": {
+        "serial-number": "87765614",
+        "file-name": "87765614_2.JPG",
+        "mark-text": "ESPOS Test Prep - Examination Strategies for Preparing Officers and Superiors",
+        "services": [
+          {
+            "sequence-number": "1",
+            "class-code": "016",
+            "description-text": "Printed books in the field of law enforcement.",
+            "filing-basis-current-1a-in": "Y",
+            "first-use-anywhere-date": "20160915",
+            "first-use-in-commerce-date": "20160915",
+            "related-files": [
+              "87765614_3.JPG",
+              "87765614_4.JPG",
+              "87765614_5.JPG"
+            ],
+            "related-files-description": "Printed book covers."
+          },
+          {
+            "sequence-number": "2",
+            "class-code": "041",
+            "description-text": "Continuing education services, namely, providing live and on-line continuing professional education seminars in the field of law enforcement.",
+            "filing-basis-current-1a-in": "Y",
+            "first-use-anywhere-date": "20160915",
+            "first-use-in-commerce-date": "20160915",
+            "related-files": [
+              "87765614_6.JPG",
+              "87765614_7.JPG",
+              "87765614_8.JPG",
+              "87765614_9.JPG",
+              "87765614_10.JPG"
+            ],
+            "related-files-description": "Advertisements from various publications."
+          }
+        ],
+        "case-file-statement": [
+          {
+            "type-code": "AF",
+            "text": "The mark was first used anywhere in a different form other than that sought to be registered at least as early as 09/15/2016, and in commerce at least as early as 09/15/2016."
+          }
+        ],
+        "case-file-owner": [
+          {
+            "legal-entity-type-code": "16",
+            "name": "ESPOS Test Prep LLC",
+            "street": "PO Box 597",
+            "city": "Livingston",
+            "state": "New Jersey (NJ)",
+            "postal-code": "07039",
+            "country-name": "United States (USX)",
+            "email": "info@espostestprep.com",
+            "phone": "973-988-3776",
+            "state-organized": "New Jersey (NJ)",
+            "website-address": "www.espostestprep.com"
+          }
+        ],
+        "correspondence": [
+          {
+            "name": "ESPOS Test Prep LLC",
+            "firm-name": "ESPOS Test Prep LLC",
+            "street": "PO Box 597",
+            "city": "Livingston",
+            "state": "New Jersey (NJ)",
+            "postal-code": "07039",
+            "country-name": "United States (USX)",
+            "phone": "973-988-3776",
+            "email": "info@espostestprep.com"
+          }
+        ]
+      },
+      "design_type_code": "3",
+      "design_type_text": "AN ILLUSTRATION DRAWING WHICH INCLUDES WORD(S)/ LETTER(S)/NUMBER(S)",
+      "design_text": "ESPOS TEST PREP - EXAMINATION STRATEGIES FOR PREPARING OFFICERS AND SUPERIORS",
+      "design_desc": "The mark consists of the stylized black wording \"ESPOS\" above the stylized orange wording \"TEST PREP\" above a horizontal bar in orange, black, and white above the stylized black wording \"EXAMINATION STRATEGIES FOR PREPARING OFFICERS AND SUPERIORS\". Above the horizontal bar and to the left of the wording \"ESPOS TEST PREP\" appears an \"E\" in black and orange with the center of the \"E\" forming the scales of justice in orange. The white areas in the drawing, other than the white in the horizontal bar, represent transparent background and are not a feature of the mark.",
+      "design_in_color": true,
+      "design_colors": "The color(s) black, orange and white is/are claimed as a feature of the mark.",
+      "design_color_locations": null,
+      "design_codes": [
+        {
+          "code": "17.05.02",
+          "descriptions": [
+            "Scales of Justice",
+            "Scales, two pan balance scales",
+            "Weights, weights for scales"
+          ],
+          "code_0": 17,
+          "code_1": 5,
+          "code_2": 2
+        },
+        {
+          "code": "26.17.13",
+          "descriptions": [
+            "Letters or words underlined and/or overlined by one or more strokes or lines",
+            "Overlined words or letters",
+            "Underlined words or letters"
+          ],
+          "code_0": 26,
+          "code_1": 17,
+          "code_2": 13
+        },
+        {
+          "code": "27.03.05",
+          "descriptions": [
+            "Objects forming letters or numerals"
+          ],
+          "code_0": 27,
+          "code_1": 3,
+          "code_2": 5
+        }
+      ],
+      "design_code": [
+        "Scales of Justice",
+        "Scales, two pan balance scales",
+        "Weights, weights for scales",
+        "Letters or words underlined and/or overlined by one or more strokes or lines",
+        "Overlined words or letters",
+        "Underlined words or letters",
+        "Objects forming letters or numerals"
+      ],
+      "total_results": 1234,
+      "score": 0.8266195685449829,
+      "id": "87765614_2",
+      "BM25_score": 8.921295,
+      "text_score": 0.8266195685449829,
+      "image_score": 0,
+      "color": [
+        "Black coffee",
+        "Bronze",
+        "Black coffee",
+        "Isabelline",
+        "Grullo",
+        "Gold (Crayola)",
+        "Nickel",
+        "Silver (Crayola)",
+        "Silver chalice",
+        "Granite gray"
+      ],
+      "description": [
+        "The mark was first used anywhere in a different form other than that sought to be registered at least as early as 09/15/2016, and in commerce at least as early as 09/15/2016."
+      ],
+      "image_path": "hr180125/87765614_2.JPG",
+      "trademark": [
+        "ESPOS Test Prep - Examination Strategies for Preparing Officers and Superiors"
+      ],
+      "highlights": {
+        "color": [
+          "Black <em>coffee</em>",
+          "Black <em>coffee</em>"
+        ]
+      }
+    },
+    {
+      "image_file": "hr180131/87773308_2.JPG",
+      "colors": [
+        {
+          "color": "Black coffee",
+          "rgb": [
+            52,
+            44,
+            44
+          ]
+        },
+        {
+          "color": "Black coffee",
+          "rgb": [
+            51,
+            44,
+            44
+          ]
+        },
+        {
+          "color": "Isabelline",
+          "rgb": [
+            237,
+            236,
+            236
+          ]
+        },
+        {
+          "color": "Rusty red",
+          "rgb": [
+            224,
+            56,
+            65
+          ]
+        },
+        {
+          "color": "Nickel",
+          "rgb": [
+            116,
+            114,
+            113
+          ]
+        },
+        {
+          "color": "Spanish gray",
+          "rgb": [
+            148,
+            148,
+            146
+          ]
+        },
+        {
+          "color": "Dark liver",
+          "rgb": [
+            89,
+            75,
+            75
+          ]
+        },
+        {
+          "color": "Brandy",
+          "rgb": [
+            129,
+            60,
+            65
+          ]
+        },
+        {
+          "color": "Manatee",
+          "rgb": [
+            148,
+            156,
+            164
+          ]
+        },
+        {
+          "color": "Granite gray",
+          "rgb": [
+            100,
+            100,
+            92
+          ]
+        }
+      ],
+      "ocr": "i@iRepairPHBNE",
+      "metadata": {
+        "serial-number": "87773308",
+        "file-name": "87773308_2.JPG",
+        "services": [
+          {
+            "sequence-number": "1",
+            "class-code": "037",
+            "description-text": "Installation, maintenance and repair of cell phone related hardware",
+            "filing-basis-current-1a-in": "Y",
+            "first-use-anywhere-date": "20150801",
+            "first-use-in-commerce-date": "20150801",
+            "related-files": [
+              "87773308_3.JPG"
+            ],
+            "related-files-description": "It is our trademark to be used as a store name."
+          },
+          {
+            "sequence-number": "2",
+            "class-code": "042",
+            "description-text": "Installation, maintenance and repair of cell phone related software; Installation, maintenance and repair of computer, Internet access, mobile phone related software",
+            "filing-basis-current-1a-in": "Y",
+            "first-use-anywhere-date": "20150801",
+            "first-use-in-commerce-date": "20150801",
+            "related-files": [
+              "87773308_4.JPG",
+              "87773308_5.JPG"
+            ],
+            "related-files-description": "It's the business card that has this trademark.; The poster that shows we do installation, maintenance and repair of computer, Internet access, mobile phone related software has this trademark."
+          }
+        ],
+        "case-file-statement": [
+          {
+            "type-code": "DM",
+            "text": "The mark consists of A icon of small robot with a red \"+\" inside; words \"i repair phone\" that the dot of first \"i\" is red color; and the \"o\" of \"phone\" looks like an apple."
+          }
+        ],
+        "case-file-owner": [
+          {
+            "legal-entity-type-code": "03",
+            "name": "iRepairPhone Corporation",
+            "dba-aka-text": "DBA iRepairPhone",
+            "street": "1235 N. Grand Ave.",
+            "city": "Walnut",
+            "state": "California (CA)",
+            "postal-code": "91789",
+            "country-name": "United States (USX)",
+            "email": "ygao51@gmail.com",
+            "phone": "626-864-4922",
+            "incorporated-in-state-code": "California (CA)"
+          }
+        ],
+        "correspondence": [
+          {
+            "name": "iRepairPhone Corporation",
+            "firm-name": "iRepairPhone Corporation",
+            "street": "1235 N. Grand Ave.",
+            "city": "Walnut",
+            "state": "California (CA)",
+            "postal-code": "91789",
+            "country-name": "United States (USX)",
+            "phone": "626-864-4922",
+            "email": "ygao51@gmail.com;cigevollc@gmail.com"
+          }
+        ]
+      },
+      "design_type_code": "3",
+      "design_type_text": "AN ILLUSTRATION DRAWING WHICH INCLUDES WORD(S)/ LETTER(S)/NUMBER(S)",
+      "design_text": "IREPEARPHONE",
+      "design_desc": "The mark consists of a black icon of a small robot with a red \"+\" inside; and the words \"i repair phone\" in black with the dot of first \"i\" is red color; and the \"o\" of \"phone\" looks like a bitten apple.",
+      "design_in_color": true,
+      "design_colors": "The color(s) black and red is/are claimed as a feature of the mark.",
+      "design_color_locations": null,
+      "design_codes": [
+        {
+          "code": "02.01.26",
+          "descriptions": [
+            "Men, mechanical men, robots",
+            "Robots (men)"
+          ],
+          "code_0": 2,
+          "code_1": 1,
+          "code_2": 26
+        },
+        {
+          "code": "05.09.05",
+          "descriptions": [
+            "Apples"
+          ],
+          "code_0": 5,
+          "code_1": 9,
+          "code_2": 5
+        },
+        {
+          "code": "24.17.06",
+          "descriptions": [
+            "Plus symbol (+)"
+          ],
+          "code_0": 24,
+          "code_1": 17,
+          "code_2": 6
+        },
+        {
+          "code": "27.03.04",
+          "descriptions": [
+            "Plants forming letters or numerals"
+          ],
+          "code_0": 27,
+          "code_1": 3,
+          "code_2": 4
+        },
+        {
+          "code": "27.03.05",
+          "descriptions": [
+            "Objects forming letters or numerals"
+          ],
+          "code_0": 27,
+          "code_1": 3,
+          "code_2": 5
+        }
+      ],
+      "design_code": [
+        "Men, mechanical men, robots",
+        "Robots (men)",
+        "Apples",
+        "Plus symbol (+)",
+        "Plants forming letters or numerals",
+        "Objects forming letters or numerals"
+      ],
+      "total_results": 1234,
+      "score": 0.8266195685449829,
+      "id": "87773308_2",
+      "BM25_score": 8.921295,
+      "text_score": 0.8266195685449829,
+      "image_score": 0,
+      "color": [
+        "Black coffee",
+        "Black coffee",
+        "Isabelline",
+        "Rusty red",
+        "Nickel",
+        "Spanish gray",
+        "Dark liver",
+        "Brandy",
+        "Manatee",
+        "Granite gray"
+      ],
+      "description": [
+        "The mark consists of A icon of small robot with a red \"+\" inside; words \"i repair phone\" that the dot of first \"i\" is red color; and the \"o\" of \"phone\" looks like an apple."
+      ],
+      "image_path": "hr180131/87773308_2.JPG",
+      "trademark": [],
+      "highlights": {
+        "color": [
+          "Black <em>coffee</em>",
+          "Black <em>coffee</em>"
+        ]
+      }
+    }
+  ],
+  "aggs": {
+    "color_space": {
+      "False": 1067,
+      "True": 167
+    },
+    "mark_types": {
+      "2": 61,
+      "3": 369,
+      "4": 674,
+      "5": 127
+    },
+    "design_codes": {
+      "1": 105,
+      "2": 136,
+      "3": 124,
+      "4": 27,
+      "5": 92,
+      "6": 18,
+      "7": 9,
+      "8": 24,
+      "9": 47,
+      "10": 6,
+      "11": 83,
+      "12": 12,
+      "13": 4,
+      "14": 7,
+      "15": 2,
+      "16": 17,
+      "17": 4,
+      "18": 11,
+      "19": 10,
+      "20": 9,
+      "21": 21,
+      "22": 3,
+      "23": 1,
+      "24": 61,
+      "25": 9,
+      "26": 551,
+      "27": 47,
+      "28": 30,
+      "29": 4
+    },
+    "colors": {
+      "Gray (web)": 869,
+      "Black olive": 830,
+      "Rich black (FOGRA39)": 829,
+      "Old silver": 811,
+      "Jet": 803,
+      "Davy's grey": 729,
+      "Nickel": 642,
+      "Smoky black": 590,
+      "Platinum": 472,
+      "Charleston green": 381,
+      "Isabelline": 372,
+      "Taupe gray": 340,
+      "Raisin black": 304,
+      "Granite gray": 301,
+      "Rifle green": 270,
+      "Spanish gray": 222,
+      "Dark liver": 205,
+      "Alabaster": 168,
+      "Cultured": 160,
+      "Dim gray": 118,
+      "Black chocolate": 115,
+      "Eerie black": 105,
+      "Quick Silver": 92,
+      "Ash gray": 85,
+      "Black coffee": 81,
+      "Silver": 78,
+      "Gainsboro": 74,
+      "Silver chalice": 72,
+      "Sonic silver": 50,
+      "Light gray": 37,
+      "Silver sand": 34,
+      "Onyx": 33,
+      "Rich black (FOGRA29)": 29,
+      "Lavender gray": 20,
+      "Roman silver": 20,
+      "Silver (Crayola)": 19,
+      "Grullo": 17,
+      "Charcoal": 15,
+      "Deep taupe": 14,
+      "Xiketic": 14,
+      "Desert sand": 12,
+      "Umber": 12,
+      "Bistre": 11,
+      "Independence": 11,
+      "Pine tree": 10,
+      "Rocket metallic": 10,
+      "Silver pink": 10,
+      "Black Shadows": 9,
+      "Café noir": 9,
+      "Slate gray": 9,
+      "Tuscany": 9,
+      "Coyote brown": 8,
+      "Ebony": 8,
+      "Gold (Crayola)": 8,
+      "Khaki (web)": 8,
+      "Raw umber": 8,
+      "Shadow": 8,
+      "Space cadet": 8,
+      "Bronze": 7,
+      "Copper red": 7,
+      "Dark liver (horses)": 7,
+      "Indian yellow": 7,
+      "Metallic gold": 7,
+      "Middle grey": 7,
+      "Outer space (Crayola)": 7,
+      "Puce": 7,
+      "Seal brown": 7,
+      "Wood brown": 7,
+      "Air superiority blue": 6,
+      "Bone": 6,
+      "Bud green": 6,
+      "Caput mortuum": 6,
+      "Dark slate gray": 6,
+      "Gold Fusion": 6,
+      "Old rose": 6,
+      "Taupe": 6,
+      "Turtle green": 6,
+      "Tuscan tan": 6,
+      "Beaver": 5,
+      "Blue sapphire": 5,
+      "Cinereous": 5,
+      "Cool grey": 5,
+      "Copper penny": 5,
+      "Fawn": 5,
+      "Jonquil": 5,
+      "Khaki (X11) (Light khaki)": 5,
+      "Pastel pink": 5,
+      "Persian orange": 5,
+      "Red-violet (Color wheel)": 5,
+      "Rusty red": 5,
+      "Shadow blue": 5,
+      "Tan": 5,
+      "Tango pink": 5,
+      "Yellow Orange": 5,
+      "Asparagus": 4,
+      "Beige": 4,
+      "Black bean": 4,
+      "Bole": 4,
+      "Brown sugar": 4,
+      "Burlywood": 4,
+      "Burnt umber": 4,
+      "Cadet grey": 4,
+      "Carnelian": 4,
+      "Carrot orange": 4,
+      "Chestnut": 4,
+      "Dark sea green": 4,
+      "Dark sky blue": 4,
+      "Dutch white": 4,
+      "Eggshell": 4,
+      "English lavender": 4,
+      "Feldgrau": 4,
+      "French bistre": 4,
+      "Fuzzy Wuzzy": 4,
+      "Green (RYB)": 4,
+      "Green-blue (Crayola)": 4,
+      "Indian red": 4,
+      "Indigo dye": 4,
+      "Light steel blue": 4,
+      "Linen": 4,
+      "New York pink": 4,
+      "Old lace": 4,
+      "Olive Drab #7": 4,
+      "Payne's grey": 4,
+      "Pewter Blue": 4,
+      "Popstar": 4,
+      "Prussian blue": 4,
+      "Russian green": 4,
+      "Saffron": 4,
+      "Shimmering Blush": 4,
+      "St. Patrick's blue": 4,
+      "Sweet Brown": 4,
+      "Timberwolf": 4,
+      "Upsdell red": 4,
+      "Vermilion": 4,
+      "Wintergreen Dream": 4,
+      "Yale Blue": 4,
+      "Antique brass": 3,
+      "Artichoke": 3,
+      "Buff": 3,
+      "Burnished brown": 3,
+      "Cadet blue (Crayola)": 3,
+      "Cerulean (Crayola)": 3,
+      "Cerulean frost": 3,
+      "Citron": 3,
+      "Copper rose": 3,
+      "Dark blue-gray": 3,
+      "Dark jungle green": 3,
+      "Dark sienna": 3,
+      "Earth yellow": 3,
+      "Fire engine red": 3,
+      "Fire opal": 3,
+      "Flame": 3,
+      "Green Sheen": 3,
+      "Green-blue": 3,
+      "Honeydew": 3,
+      "International orange (Golden Gate Bridge)": 3,
+      "Kelly green": 3,
+      "Lapis lazuli": 3,
+      "Lavender (web)": 3,
+      "Light French beige": 3,
+      "Lincoln green": 3,
+      "Liver (organ)": 3,
+      "Liver chestnut": 3,
+      "Maize": 3,
+      "Marigold": 3,
+      "Maximum blue": 3,
+      "May green": 3,
+      "Medium carmine": 3,
+      "Mellow apricot": 3,
+      "Metallic Sunburst": 3,
+      "Ming": 3,
+      "Morning blue": 3,
+      "Mountbatten pink": 3,
+      "Olive": 3,
+      "Pink lavender": 3,
+      "Queen blue": 3,
+      "Quinacridone magenta": 3,
+      "Raspberry glace": 3,
+      "Red (pigment)": 3,
+      "Rose Dust": 3,
+      "Rose quartz": 3,
+      "Royal blue (dark)": 3,
+      "Ruby red": 3,
+      "Russian violet": 3,
+      "Sand dune": 3,
+      "Sandy brown": 3,
+      "Satin sheen gold": 3,
+      "Silver (Metallic)": 3,
+      "Spanish bistre": 3,
+      "Steel Teal": 3,
+      "Tan (Crayola)": 3,
+      "Tea rose": 3,
+      "Telemagenta": 3,
+      "Tumbleweed": 3,
+      "Tuscan brown": 3,
+      "Van Dyke brown": 3,
+      "Verdigris": 3,
+      "Xanadu": 3,
+      "Acid green": 2,
+      "Aero": 2,
+      "Alice blue": 2,
+      "Amaranth (M&P)": 2,
+      "Amaranth purple": 2,
+      "Amaranth red": 2,
+      "Amazon": 2,
+      "Android green": 2,
+      "Army green": 2,
+      "B'dazzled blue": 2,
+      "Black coral": 2,
+      "Blast-off bronze": 2,
+      "Bleu de France": 2,
+      "Blond": 2,
+      "Blue jeans": 2,
+      "Blue yonder": 2,
+      "Cadet blue": 2,
+      "Cadmium orange": 2,
+      "Cameo pink": 2,
+      "Candy apple red": 2,
+      "Carolina blue": 2,
+      "Celadon": 2,
+      "Champagne pink": 2,
+      "Charm pink": 2,
+      "Chinese red": 2,
+      "Copper": 2,
+      "Dark brown": 2,
+      "Dark byzantium": 2,
+      "Dark salmon": 2,
+      "Deep Space Sparkle": 2,
+      "Deep saffron": 2,
+      "English green": 2,
+      "English red": 2,
+      "Gamboge": 2,
+      "Glaucous": 2,
+      "Golden brown": 2,
+      "Gunmetal": 2,
+      "India green": 2,
+      "International orange (engineering)": 2,
+      "Light periwinkle": 2,
+      "Light slate gray": 2,
+      "Liver": 2,
+      "Madder Lake": 2,
+      "Magenta (dye)": 2,
+      "Maize (Crayola)": 2,
+      "Manatee": 2,
+      "Maximum green": 2,
+      "Maximum yellow red": 2,
+      "Middle green": 2,
+      "Middle purple": 2,
+      "Middle red purple": 2,
+      "Midnight blue": 2,
+      "OU Crimson red": 2,
+      "Old burgundy": 2,
+      "Old gold": 2,
+      "Old lavender": 2,
+      "Olivine": 2,
+      "Pacific blue": 2,
+      "Pale aqua": 2,
+      "Pale cerulean": 2,
+      "Persian red": 2,
+      "Pistachio": 2,
+      "Plum": 2,
+      "Polished Pine": 2,
+      "Prune": 2,
+      "Purple navy": 2,
+      "Red (Pantone)": 2,
+      "Rhythm": 2,
+      "Rose ebony": 2,
+      "Rose taupe": 2,
+      "Rosy brown": 2,
+      "Rust": 2,
+      "Saddle brown": 2,
+      "Safety orange (blaze orange)": 2,
+      "Sap green": 2,
+      "Sepia": 2,
+      "Sienna": 2,
+      "Sky blue (Crayola)": 2,
+      "Snow": 2,
+      "Steel blue": 2,
+      "Straw": 2,
+      "Sunglow": 2,
+      "Teal blue": 2,
+      "Tufts blue": 2,
+      "Tuscan": 2,
+      "UP maroon": 2,
+      "Wine": 2,
+      "Wine dregs": 2,
+      "Yellow (NCS)": 2,
+      "Yellow-green (Crayola)": 2,
+      "Aero blue": 1,
+      "Amber (SAE/ECE)": 1,
+      "Antique bronze": 1,
+      "Antique ruby": 1,
+      "Aureolin": 1,
+      "Avocado": 1,
+      "Baby blue eyes": 1,
+      "Bittersweet shimmer": 1,
+      "Blue (Crayola)": 1,
+      "Blue (NCS)": 1,
+      "Blue (pigment)": 1,
+      "Blue bell": 1,
+      "Blue-green": 1,
+      "Blush": 1,
+      "Brandy": 1,
+      "Brick red": 1,
+      "Bright yellow (Crayola)": 1,
+      "Brown": 1,
+      "CG red": 1,
+      "Cadet": 1,
+      "Cadmium red": 1,
+      "Cardinal": 1,
+      "Catawba": 1,
+      "Cedar Chest": 1,
+      "Cerise": 1,
+      "Cerulean blue": 1,
+      "China rose": 1,
+      "Cinnamon Satin": 1,
+      "Citrine": 1,
+      "Claret": 1,
+      "Columbia Blue": 1,
+      "Coquelicot": 1,
+      "Cordovan": 1,
+      "Cornflower blue": 1,
+      "Cornsilk": 1,
+      "Cosmic latte": 1,
+      "Cotton candy": 1,
+      "Crimson (UA)": 1,
+      "Cyan (process)": 1,
+      "Dark cornflower blue": 1,
+      "Dark cyan": 1,
+      "Dark moss green": 1,
+      "Dark orange": 1,
+      "Dark purple": 1,
+      "Dark spring green": 1,
+      "Deep cerise": 1,
+      "Deep chestnut": 1,
+      "Eton blue": 1,
+      "Fern green": 1,
+      "Field drab": 1,
+      "Fiery rose": 1,
+      "Flax": 1,
+      "Floral white": 1,
+      "French pink": 1,
+      "French raspberry": 1,
+      "Fuchsia purple": 1,
+      "Granny Smith apple": 1,
+      "Green-yellow (Crayola)": 1,
+      "Hansa yellow": 1,
+      "Hot pink": 1,
+      "Iceberg": 1,
+      "Illuminating emerald": 1,
+      "June bud": 1,
+      "Kombu green": 1,
+      "Lava": 1,
+      "Light green": 1,
+      "Light sea green": 1,
+      "Little boy blue": 1,
+      "Liver (dogs)": 1,
+      "Livid": 1,
+      "Magic mint": 1,
+      "Mandarin": 1,
+      "Mango Tango": 1,
+      "Maroon (X11)": 1,
+      "Mauve": 1,
+      "Maximum blue purple": 1,
+      "Maximum green yellow": 1,
+      "Maximum purple": 1,
+      "Medium blue": 1,
+      "Medium sea green": 1,
+      "Medium turquoise": 1,
+      "Metallic Seaweed": 1,
+      "Middle blue": 1,
+      "Middle blue green": 1,
+      "Middle green yellow": 1,
+      "Middle yellow red": 1,
+      "Midnight": 1,
+      "Midnight green (eagle green)": 1,
+      "Minion yellow": 1,
+      "Mint cream": 1,
+      "Misty moss": 1,
+      "Nadeshiko pink": 1,
+      "Neon green": 1,
+      "Non-photo blue": 1,
+      "Nyanza": 1,
+      "Ocean Blue": 1,
+      "Olive Drab (#3)": 1,
+      "Opal": 1,
+      "Orange (Crayola)": 1,
+      "Orange soda": 1,
+      "Orange-yellow (Crayola)": 1,
+      "Orchid": 1,
+      "Orchid pink": 1,
+      "Oxford blue": 1,
+      "Pakistan green": 1,
+      "Pale pink": 1,
+      "Pale purple (Pantone)": 1,
+      "Paris Green": 1,
+      "Pear": 1,
+      "Pearly purple": 1,
+      "Permanent Geranium Lake": 1,
+      "Persimmon": 1,
+      "Princeton orange": 1,
+      "Pumpkin": 1,
+      "Purple Plum": 1,
+      "Raw Sienna": 1,
+      "Red (Crayola)": 1,
+      "Red-orange": 1,
+      "Red-violet": 1,
+      "Redwood": 1,
+      "Resolution blue": 1,
+      "Rose madder": 1,
+      "Rosewood": 1,
+      "Rufous": 1,
+      "Russet": 1,
+      "Safety orange": 1,
+      "Sage": 1,
+      "Sapphire (Crayola)": 1,
+      "Sea green": 1,
+      "Seashell": 1,
+      "Sheen green": 1,
+      "Shiny Shamrock": 1,
+      "Sizzling Sunrise": 1,
+      "Sky blue": 1,
+      "Solid pink": 1,
+      "Spanish orange": 1,
+      "Spring green (Crayola)": 1,
+      "Star command blue": 1,
+      "Steel pink": 1,
+      "Tangerine": 1,
+      "Tiffany Blue": 1,
+      "Turquoise": 1,
+      "Turquoise green": 1,
+      "Tuscan red": 1,
+      "UP Forest green": 1,
+      "Uranian blue": 1,
+      "Vanilla": 1,
+      "Vanilla ice": 1,
+      "Vegas gold": 1,
+      "Venetian red": 1,
+      "Violet (crayola)": 1,
+      "Violet-blue (Crayola)": 1,
+      "Viridian": 1,
+      "Wild blue yonder": 1,
+      "Wild watermelon": 1,
+      "Xanthic": 1,
+      "Yellow-green": 1,
+      "Yellow-green (Color Wheel)": 1,
+      "Zomp": 1
+    }
+  },
+  "uploaded_images": []
+}
