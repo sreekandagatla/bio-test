@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
 
@@ -33,7 +34,6 @@ import com.amazonaws.services.rekognition.model.DetectFacesResult;
 import com.amazonaws.services.rekognition.model.Face;
 import com.amazonaws.services.rekognition.model.FaceDetail;
 import com.amazonaws.services.rekognition.model.FaceMatch;
-import com.amazonaws.services.rekognition.model.FaceRecord;
 import com.amazonaws.services.rekognition.model.Image;
 import com.amazonaws.services.rekognition.model.IndexFacesRequest;
 import com.amazonaws.services.rekognition.model.IndexFacesResult;
@@ -49,7 +49,8 @@ import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.ListObjectsV2Result;
 import com.amazonaws.services.s3.model.S3ObjectSummary;
-import com.biomatch.test.controller.utils.MessageExtractorUtils;
+import com.biomatch.test.payload.FaceMatchResult;
+import com.biomatch.test.payload.Score;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -69,9 +70,7 @@ import io.swagger.annotations.ApiResponses;
 @RequestMapping("/v1")
 @CrossOrigin(origins = "*")
 public class BiometricController {
-	@Autowired
-	private MessageExtractorUtils messageExtractorUtils;
-
+	
 	@ApiOperation(value = "Generate a template from the provided biometric image", notes="This endpoint accepts a base64 encoded PNG and attempts"
 			+ " to perform a 'feature extraction' operation producing a single template")
 	@ApiResponses(value = {
@@ -79,8 +78,10 @@ public class BiometricController {
 			@ApiResponse(code = 400, message = "Bad Request"),
 			@ApiResponse(code = 200, message = "Successful Response") })
 	@PostMapping(value="/create-template",produces = "application/json", consumes = "application/json")
-	public String createTemplate(@RequestBody @Valid com.biomatch.test.payload.Image image, BindingResult result) {
-		String imageEncodedString = image.imageData;
+	public String createTemplate() {
+		//public String createTemplate(@RequestBody  @Valid com.biomatch.test.payload.Image image, BindingResult result) {
+		//String imageEncodedString = image.imageData;
+		String imageEncodedString = "test";
 
 		AmazonRekognition rekognitionClient = AmazonRekognitionClientBuilder.defaultClient();
 		com.amazonaws.services.rekognition.model.Image modelImage = new com.amazonaws.services.rekognition.model.Image();
@@ -148,7 +149,7 @@ public class BiometricController {
 			@ApiResponse(code = 400, message = "Bad Request"),
 			@ApiResponse(code = 200, message = "Successful Response") })	
 	@PostMapping("/compare-list")
-	public String  compareList() {
+	public String compareList() {
 		String collectionId = "TestImagesCollection";
 		String bucketName = "100cloud100";
 
@@ -157,9 +158,19 @@ public class BiometricController {
 		//createCollection(collectionId);
 
 		//addFacesToCollection(collectionId,bucketName);
-		searchFaces(collectionId,bucketName);
+		List<FaceMatchResult> faceMatchResultList = searchFaces(collectionId,bucketName);
+		ObjectMapper objectMapper = new ObjectMapper();
+		String result =  null;
+		
+		try {
+			result = objectMapper.writerWithDefaultPrettyPrinter()
+			.writeValueAsString(faceMatchResultList);
+		} catch (JsonProcessingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
-		return null;
+		return result;
 	}
 	/*
 	 * @GetMapping(value = "/")
@@ -265,7 +276,8 @@ public class BiometricController {
 		}
 	}
 
-	void searchFaces(String collectionId, String bucketName) {
+	List<FaceMatchResult> searchFaces(String collectionId, String bucketName) {
+		List<FaceMatchResult> faceMatchResultList = new ArrayList<FaceMatchResult>();
 		AmazonRekognition rekognitionClient = AmazonRekognitionClientBuilder.defaultClient();
 		final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.US_EAST_1).build();
 		ListObjectsV2Result result = s3.listObjectsV2(bucketName);
@@ -275,15 +287,14 @@ public class BiometricController {
 		addFacesToCollection(collectionId,bucketName);
 		s3objectsummaryList.forEach(x -> {			
 			deleteFaceFromCollection(collectionId,x.getKey());
-			searchFaces(collectionId, bucketName, x.getKey());
+			FaceMatchResult faceMatchResult = searchFaces(collectionId, bucketName, x.getKey());
+			faceMatchResultList.add(faceMatchResult);
 			indexFaces(collectionId, bucketName, x.getKey());
-
 		});
-
-
-
+		return faceMatchResultList;
 	}
-	void searchFaces(String collectionId, String bucketName, String object) {
+	FaceMatchResult searchFaces(String collectionId, String bucketName, String object) {
+		FaceMatchResult result = new FaceMatchResult();
 		AmazonRekognition rekognitionClient = AmazonRekognitionClientBuilder.defaultClient();
 		ObjectMapper objectMapper = new ObjectMapper();
 
@@ -298,23 +309,33 @@ public class BiometricController {
 				.withCollectionId(collectionId)
 				.withImage(image)
 				.withFaceMatchThreshold(70F)
-				.withMaxFaces(1);
+				.withMaxFaces(5);
 
 		SearchFacesByImageResult searchFacesByImageResult = 
 				rekognitionClient.searchFacesByImage(searchFacesByImageRequest);
 
 		System.out.println("Faces matching largest face in image from" + object);
 		List < FaceMatch > faceImageMatches = searchFacesByImageResult.getFaceMatches();
+		result.setReference_face(object);
+		List<Score> scoreList = new ArrayList<Score>();
 		for (FaceMatch face: faceImageMatches) {
-			try {
+			
+			Score score = new Score();
+			score.setScore(face.getSimilarity());
+			score.setMatched_face(face.getFace().getExternalImageId());
+			
+			/*try {
 				System.out.println(objectMapper.writerWithDefaultPrettyPrinter()
 						.writeValueAsString(face));
 			} catch (JsonProcessingException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			System.out.println();
+			System.out.println();*/
+			scoreList.add(score);
 		}
+		result.setScores(scoreList);
+		return result;
 	}
 
 	void deleteFaceFromCollection(String collectionId, String object) {
