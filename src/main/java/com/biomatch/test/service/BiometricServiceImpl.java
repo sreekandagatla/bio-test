@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import com.amazonaws.regions.Regions;
@@ -19,11 +21,15 @@ import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.ListObjectsV2Result;
 import com.amazonaws.services.s3.model.S3ObjectSummary;
+import com.biomatch.test.controller.v1.BiometricController;
 import com.biomatch.test.payload.FaceMatchResult;
 import com.biomatch.test.payload.Score;
 @Service
 public class BiometricServiceImpl  implements BiometricService{
+	private static Logger logger = LoggerFactory.getLogger(BiometricServiceImpl.class);
+	
 	public List<FaceMatchResult> compareFaces(String bucketName) {	
+		logger.debug(" face mactch starts for bucketName="+bucketName);
 
 		final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.US_EAST_1).build();
 		ListObjectsV2Result result = s3.listObjectsV2(bucketName);
@@ -50,10 +56,12 @@ public class BiometricServiceImpl  implements BiometricService{
 
 			faceMatchResultList.add(faceMatchResult);
 		});
+		logger.debug(" face mactch ends for bucketName="+bucketName);
 		return faceMatchResultList;
 	}
 
 	private void calculateNormalizedScore(List<Score> scoreList) {
+		logger.debug(" Normalization starts");
 		List<Float> dataPoints = new ArrayList<Float>();
 		scoreList.forEach(z-> dataPoints.add(z.getScore()));
 		Collections.sort(dataPoints);
@@ -66,6 +74,7 @@ public class BiometricServiceImpl  implements BiometricService{
 			float normalizedScore = (similarity-min)/(max-min);
 			scoreObject.setNormalizedScore(normalizedScore);				
 		}
+		logger.debug(" Normalization ends");
 	}
 
 	private Float compareFace(String bucketName, String sourceImage, String targetImage) {
