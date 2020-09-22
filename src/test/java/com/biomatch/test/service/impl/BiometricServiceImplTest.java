@@ -46,7 +46,16 @@ public class BiometricServiceImplTest {
 		verify(service).compareFace(bucketName, image1, image2);
 		verify(service).compareFace(bucketName, image2, image1);
 	}
-
-
+	
+	/*@Test
+	public void testNullCompareFaces() {
+		String bucketName = "test";		
+		final BiometricServiceImpl service = spy(new BiometricServiceImpl());
+		Mockito.doReturn(null).when(service).getS3Objects(bucketName);
+		List<FaceMatchResult> result = service.compareFaces(bucketName);
+		assertEquals("Invalid Response!", 0, result.size());
+		verify(service).getS3Objects(bucketName);
+		
+	}*/
 
 }

@@ -1,6 +1,8 @@
 package com.biomatch.test.controller;
 
+import static org.hamcrest.CoreMatchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.util.ArrayList;
@@ -30,7 +32,9 @@ public class AlgorithmControllerTest {
 		List<FaceMatchResult> resultList = new ArrayList<FaceMatchResult>();
 		this.mockMvc.perform(get("/v1/info").content(asJsonString(resultList)).contentType(MediaType.APPLICATION_JSON)
         .accept(MediaType.APPLICATION_JSON))
-        .andExpect(status().isOk());                
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$.algorithmName",is("Amazon Rekognition")))
+		.andExpect(jsonPath("$.companyName",is("AWS")));
 	}
 	
 	public String asJsonString(final Object details) {

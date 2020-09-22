@@ -32,10 +32,16 @@ public class BiometricControllerTest {
 		List<FaceMatchResult> resultList = new ArrayList<FaceMatchResult>();
 		this.mockMvc.perform(get("/v1/compare-list").content(asJsonString(resultList)).contentType(MediaType.APPLICATION_JSON)
         .accept(MediaType.APPLICATION_JSON))
-        .andExpect(status().isOk());
-                
+        .andExpect(status().isOk());                
 	}
 	
+	@Test
+	public void tesCompareListAPI_Exception() throws Exception {
+		List<FaceMatchResult> resultList = null;
+		this.mockMvc.perform(get("/v1/compare-list").content(asJsonString(resultList)).contentType(MediaType.APPLICATION_JSON)
+        .accept(MediaType.APPLICATION_JSON))
+        .andExpect(status().isOk());                
+	}
 	public String asJsonString(final Object details) {
         try {
             return new ObjectMapper().writeValueAsString(details);

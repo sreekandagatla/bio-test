@@ -26,33 +26,35 @@ import com.biomatch.test.payload.Score;
 @Service
 public class BiometricServiceImpl  implements BiometricService{
 	private static Logger logger = LoggerFactory.getLogger(BiometricServiceImpl.class);
-	
+
 	public List<FaceMatchResult> compareFaces(String bucketName) {	
 		logger.debug(" face mactch starts for bucketName="+bucketName);
 
 		List<S3ObjectSummary> s3objectsummaryList = getS3Objects(bucketName);
 		List<FaceMatchResult> faceMatchResultList = new ArrayList<FaceMatchResult>();
-		s3objectsummaryList.forEach(x -> {
-			FaceMatchResult faceMatchResult = new FaceMatchResult();
-			List<Score> scoreList = new ArrayList<Score>();
-			faceMatchResult.setReference_face(x.getKey());	
+		if(s3objectsummaryList != null && s3objectsummaryList.size()>0) {
+			s3objectsummaryList.forEach(x -> {
+				FaceMatchResult faceMatchResult = new FaceMatchResult();
+				List<Score> scoreList = new ArrayList<Score>();
+				faceMatchResult.setReference_face(x.getKey());	
 
-			s3objectsummaryList.forEach(y -> {
-				if(!y.getKey().equalsIgnoreCase(x.getKey())) {
-					Score score = new Score();
-					score.setCompared_face(y.getKey());		
-					Float similarity = compareFace(bucketName, x.getKey(), y.getKey());
-					score.setScore(similarity);
-					scoreList.add(score);
-				}
+				s3objectsummaryList.forEach(y -> {
+					if(!y.getKey().equalsIgnoreCase(x.getKey())) {
+						Score score = new Score();
+						score.setCompared_face(y.getKey());		
+						Float similarity = compareFace(bucketName, x.getKey(), y.getKey());
+						score.setScore(similarity);
+						scoreList.add(score);
+					}
 
+				});
+				calculateNormalizedScore(scoreList);			
+
+				faceMatchResult.setScores(scoreList);
+
+				faceMatchResultList.add(faceMatchResult);
 			});
-			calculateNormalizedScore(scoreList);			
-
-			faceMatchResult.setScores(scoreList);
-
-			faceMatchResultList.add(faceMatchResult);
-		});
+		}
 		logger.debug(" face mactch ends for bucketName="+bucketName);
 		return faceMatchResultList;
 	}
