@@ -21,7 +21,6 @@ import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.ListObjectsV2Result;
 import com.amazonaws.services.s3.model.S3ObjectSummary;
-import com.biomatch.test.controller.v1.BiometricController;
 import com.biomatch.test.payload.FaceMatchResult;
 import com.biomatch.test.payload.Score;
 @Service
