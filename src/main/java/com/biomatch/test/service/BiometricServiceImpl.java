@@ -40,7 +40,7 @@ public class BiometricServiceImpl  implements BiometricService{
 			s3objectsummaryList.forEach(y -> {
 				if(!y.getKey().equalsIgnoreCase(x.getKey())) {
 					Score score = new Score();
-					score.setMatched_face(y.getKey());		
+					score.setCompared_face(y.getKey());		
 					Float similarity = compareFace(bucketName, x.getKey(), y.getKey());
 					score.setScore(similarity);
 					scoreList.add(score);

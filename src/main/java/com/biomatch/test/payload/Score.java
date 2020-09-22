@@ -7,7 +7,7 @@ import lombok.Data;
 public class Score implements Serializable
 {
 
-	public String matched_face;
+	public String compared_face;
 	public Float score;
 	public Float normalizedScore;
 	private final static long serialVersionUID = -3009962481467314107L;
