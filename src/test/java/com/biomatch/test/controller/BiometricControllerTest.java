@@ -36,6 +36,17 @@ public class BiometricControllerTest {
 	}
 	
 	@Test
+	public void tesCompareListAPI_JsonProcessing() throws Exception {
+		List<FaceMatchResult> resultList = new ArrayList<FaceMatchResult>();
+		FaceMatchResult result = new FaceMatchResult();
+		result.setReference_face("<test");
+		resultList.add(result);
+		this.mockMvc.perform(get("/v1/compare-list").content(asJsonString(resultList)).contentType(MediaType.APPLICATION_JSON)
+        .accept(MediaType.APPLICATION_JSON))
+        .andExpect(status().isOk());                
+	}
+	
+	@Test
 	public void tesCompareListAPI_Exception() throws Exception {
 		List<FaceMatchResult> resultList = null;
 		this.mockMvc.perform(get("/v1/compare-list").content(asJsonString(resultList)).contentType(MediaType.APPLICATION_JSON)

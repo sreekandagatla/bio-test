@@ -116,7 +116,8 @@
 				<version>0.8.3</version>
 				<configuration>
 					<excludes>
-						<exclude>**/*Config.*</exclude>        
+						<exclude>**/*Config.*</exclude>  
+						<exclude>**/Application.*</exclude>      
 					</excludes>
 				</configuration>
 				<executions>

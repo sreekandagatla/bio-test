@@ -14,6 +14,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import com.amazonaws.services.s3.model.S3ObjectSummary;
 import com.biomatch.test.payload.FaceMatchResult;
+import com.biomatch.test.payload.Score;
 import com.biomatch.test.service.BiometricServiceImpl;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -47,7 +48,7 @@ public class BiometricServiceImplTest {
 		verify(service).compareFace(bucketName, image2, image1);
 	}
 	
-	/*@Test
+	@Test
 	public void testNullCompareFaces() {
 		String bucketName = "test";		
 		final BiometricServiceImpl service = spy(new BiometricServiceImpl());
@@ -56,6 +57,27 @@ public class BiometricServiceImplTest {
 		assertEquals("Invalid Response!", 0, result.size());
 		verify(service).getS3Objects(bucketName);
 		
-	}*/
+	}
+	
+	@Test
+	public void testCalculateNormalizedScore() {
+		final BiometricServiceImpl service = spy(new BiometricServiceImpl());
+		Score score1 = new Score();
+		score1.setScore(99.99944f);
+		
+		Score score2 = new Score();
+		score2.setScore(0.38437638f);
+		
+		Score score3 = new Score();
+		score3.setScore(88.99944f);
+		
+		List<Score> scoreList = new ArrayList<Score>();
+		scoreList.add(score1);
+		scoreList.add(score2);
+		scoreList.add(score3);
+		Mockito.doNothing().when(service).calculateNormalizedScore(scoreList);
+		service.calculateNormalizedScore(scoreList);
+		
+	}
 
 }
