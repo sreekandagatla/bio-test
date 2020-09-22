@@ -1,6 +1,7 @@
 package com.biomatch.test.service;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -41,12 +42,30 @@ public class BiometricServiceImpl  implements BiometricService{
 					score.setScore(similarity);
 					scoreList.add(score);
 				}
-				
+
 			});
+			calculateNormalizedScore(scoreList);			
+
 			faceMatchResult.setScores(scoreList);
+
 			faceMatchResultList.add(faceMatchResult);
 		});
 		return faceMatchResultList;
+	}
+
+	private void calculateNormalizedScore(List<Score> scoreList) {
+		List<Float> dataPoints = new ArrayList<Float>();
+		scoreList.forEach(z-> dataPoints.add(z.getScore()));
+		Collections.sort(dataPoints);
+		float min = dataPoints.get(0);
+		float max = dataPoints.get(dataPoints.size()-1);
+
+		for (int i=0; i<scoreList.size(); i++) {
+			Score scoreObject = scoreList.get(i);
+			Float similarity = scoreObject.getScore();
+			float normalizedScore = (similarity-min)/(max-min);
+			scoreObject.setNormalizedScore(normalizedScore);				
+		}
 	}
 
 	private Float compareFace(String bucketName, String sourceImage, String targetImage) {
@@ -63,10 +82,7 @@ public class BiometricServiceImpl  implements BiometricService{
 			similarity = faceMatch.getSimilarity();
 		}
 		return similarity;
-
-		/*
-		 * ComparedFace x = faceMatch.getFace(); x.getConfidence();
-		 */
 	}
+
 
 }
