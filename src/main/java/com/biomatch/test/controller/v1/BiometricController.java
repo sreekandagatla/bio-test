@@ -6,51 +6,22 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.Base64;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.amazonaws.regions.Regions;
 import com.amazonaws.services.rekognition.AmazonRekognition;
 import com.amazonaws.services.rekognition.AmazonRekognitionClientBuilder;
-import com.amazonaws.services.rekognition.model.CompareFacesMatch;
-import com.amazonaws.services.rekognition.model.CompareFacesRequest;
-import com.amazonaws.services.rekognition.model.CompareFacesResult;
-import com.amazonaws.services.rekognition.model.ComparedFace;
-import com.amazonaws.services.rekognition.model.ComparedSourceImageFace;
-import com.amazonaws.services.rekognition.model.CreateCollectionRequest;
-import com.amazonaws.services.rekognition.model.CreateCollectionResult;
-import com.amazonaws.services.rekognition.model.DeleteCollectionRequest;
-import com.amazonaws.services.rekognition.model.DeleteCollectionResult;
-import com.amazonaws.services.rekognition.model.DeleteFacesRequest;
-import com.amazonaws.services.rekognition.model.DeleteFacesResult;
 import com.amazonaws.services.rekognition.model.DetectFacesRequest;
 import com.amazonaws.services.rekognition.model.DetectFacesResult;
-import com.amazonaws.services.rekognition.model.Face;
 import com.amazonaws.services.rekognition.model.FaceDetail;
-import com.amazonaws.services.rekognition.model.FaceMatch;
-import com.amazonaws.services.rekognition.model.Image;
-import com.amazonaws.services.rekognition.model.IndexFacesRequest;
-import com.amazonaws.services.rekognition.model.IndexFacesResult;
-import com.amazonaws.services.rekognition.model.ListCollectionsRequest;
-import com.amazonaws.services.rekognition.model.ListCollectionsResult;
-import com.amazonaws.services.rekognition.model.ListFacesRequest;
-import com.amazonaws.services.rekognition.model.ListFacesResult;
-import com.amazonaws.services.rekognition.model.QualityFilter;
-import com.amazonaws.services.rekognition.model.S3Object;
-import com.amazonaws.services.rekognition.model.SearchFacesByImageRequest;
-import com.amazonaws.services.rekognition.model.SearchFacesByImageResult;
-import com.amazonaws.services.s3.AmazonS3;
-import com.amazonaws.services.s3.AmazonS3ClientBuilder;
-import com.amazonaws.services.s3.model.ListObjectsV2Result;
-import com.amazonaws.services.s3.model.S3ObjectSummary;
 import com.biomatch.test.payload.FaceMatchResult;
-import com.biomatch.test.payload.Score;
+import com.biomatch.test.service.BiometricService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -70,6 +41,9 @@ import io.swagger.annotations.ApiResponses;
 @RequestMapping("/v1")
 @CrossOrigin(origins = "*")
 public class BiometricController {
+	@Autowired
+	BiometricService service;
+	
 	
 	@ApiOperation(value = "Generate a template from the provided biometric image", notes="This endpoint accepts a base64 encoded PNG and attempts"
 			+ " to perform a 'feature extraction' operation producing a single template")
@@ -150,15 +124,8 @@ public class BiometricController {
 			@ApiResponse(code = 200, message = "Successful Response") })	
 	@PostMapping("/compare-list")
 	public String compareList() {
-		String collectionId = "TestImagesCollection";
 		String bucketName = "100cloud100";
-
-
-		//cleanExistingCollection(collectionId);
-		//createCollection(collectionId);
-
-		//addFacesToCollection(collectionId,bucketName);
-		List<FaceMatchResult> faceMatchResultList = compareFaces(bucketName);
+		List<FaceMatchResult> faceMatchResultList = service.compareFaces(bucketName);
 		ObjectMapper objectMapper = new ObjectMapper();
 		String result =  null;
 		
@@ -173,49 +140,7 @@ public class BiometricController {
 		return result;
 	}
 	
-	public List<FaceMatchResult> compareFaces(String bucketName) {	
-		
-		final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.US_EAST_1).build();
-		ListObjectsV2Result result = s3.listObjectsV2(bucketName);
-		List<S3ObjectSummary> s3objectsummaryList = result.getObjectSummaries();
-		List<FaceMatchResult> faceMatchResultList = new ArrayList<FaceMatchResult>();
-		s3objectsummaryList.forEach(x -> {
-			FaceMatchResult faceMatchResult = new FaceMatchResult();
-			List<Score> scoreList = new ArrayList<Score>();
-			faceMatchResult.setReference_face(x.getKey());	
-			
-			s3objectsummaryList.forEach(y -> {
-				Score score = new Score();
-				score.setMatched_face(y.getKey());		
-				Float similarity = compareTest(bucketName, x.getKey(), y.getKey());
-				score.setScore(similarity);
-				scoreList.add(score);
-			});
-			faceMatchResult.setScores(scoreList);
-			faceMatchResultList.add(faceMatchResult);
-		});
-		return faceMatchResultList;
-	}
 	
-	public Float compareTest(String bucketName, String sourceImage, String targetImage) {
-		AmazonRekognition client = AmazonRekognitionClientBuilder.standard().build();
-		CompareFacesRequest request = new CompareFacesRequest()
-		        .withSourceImage(new Image().withS3Object(new S3Object().withBucket(bucketName).withName(sourceImage)))
-		        .withTargetImage(new Image().withS3Object(new S3Object().withBucket(bucketName).withName(targetImage))).withSimilarityThreshold(0f);
-		CompareFacesResult response = client.compareFaces(request);
-		ComparedSourceImageFace y = response.getSourceImageFace();
-		List<CompareFacesMatch> matchList = response.getFaceMatches();
-		Float similarity = 0f;
-		if(!matchList.isEmpty() && matchList.size()>0) {
-		CompareFacesMatch faceMatch = matchList.get(0);
-		similarity = faceMatch.getSimilarity();
-		}
-		return similarity;
-		
-		/*
-		 * ComparedFace x = faceMatch.getFace(); x.getConfidence();
-		 */
-	}
 	
 
 
