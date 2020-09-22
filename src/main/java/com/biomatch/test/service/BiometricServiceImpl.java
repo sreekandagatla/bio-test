@@ -31,9 +31,7 @@ public class BiometricServiceImpl  implements BiometricService{
 	public List<FaceMatchResult> compareFaces(String bucketName) {	
 		logger.debug(" face mactch starts for bucketName="+bucketName);
 
-		final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.US_EAST_1).build();
-		ListObjectsV2Result result = s3.listObjectsV2(bucketName);
-		List<S3ObjectSummary> s3objectsummaryList = result.getObjectSummaries();
+		List<S3ObjectSummary> s3objectsummaryList = getS3Objects(bucketName);
 		List<FaceMatchResult> faceMatchResultList = new ArrayList<FaceMatchResult>();
 		s3objectsummaryList.forEach(x -> {
 			FaceMatchResult faceMatchResult = new FaceMatchResult();
@@ -60,7 +58,14 @@ public class BiometricServiceImpl  implements BiometricService{
 		return faceMatchResultList;
 	}
 
-	private void calculateNormalizedScore(List<Score> scoreList) {
+	public List<S3ObjectSummary> getS3Objects(String bucketName) {
+		final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.US_EAST_1).build();
+		ListObjectsV2Result result = s3.listObjectsV2(bucketName);
+		List<S3ObjectSummary> s3objectsummaryList = result.getObjectSummaries();
+		return s3objectsummaryList;
+	}
+
+	public  void calculateNormalizedScore(List<Score> scoreList) {
 		logger.debug(" Normalization starts");
 		List<Float> dataPoints = new ArrayList<Float>();
 		scoreList.forEach(z-> dataPoints.add(z.getScore()));
@@ -77,7 +82,7 @@ public class BiometricServiceImpl  implements BiometricService{
 		logger.debug(" Normalization ends");
 	}
 
-	private Float compareFace(String bucketName, String sourceImage, String targetImage) {
+	public Float compareFace(String bucketName, String sourceImage, String targetImage) {
 		AmazonRekognition client = AmazonRekognitionClientBuilder.standard().build();
 		CompareFacesRequest request = new CompareFacesRequest()
 				.withSourceImage(new Image().withS3Object(new S3Object().withBucket(bucketName).withName(sourceImage)))
