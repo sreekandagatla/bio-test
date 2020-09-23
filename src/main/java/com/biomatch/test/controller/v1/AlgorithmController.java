@@ -23,6 +23,10 @@ import io.swagger.annotations.ApiResponses;
 @CrossOrigin(origins = "*")
 public class AlgorithmController {
 
+	/**
+	 * algorithm information API
+	 * @return
+	 */
 	@ApiOperation(value = "Returns basic information for the algorithm.", notes="This endpoint returns some basic information about the algorithm.")
 	@ApiResponses(value = {
 			@ApiResponse(code = 500, message = "Internal Server error"),

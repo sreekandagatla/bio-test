@@ -23,9 +23,17 @@ import com.amazonaws.services.s3.model.ListObjectsV2Result;
 import com.amazonaws.services.s3.model.S3ObjectSummary;
 import com.biomatch.test.payload.FaceMatchResult;
 import com.biomatch.test.payload.Score;
+/**
+ * @author KandagS1
+ * This is implementation class for face compare 
+ *
+ */
 @Service
 public class BiometricServiceImpl  implements BiometricService{
 	private static Logger logger = LoggerFactory.getLogger(BiometricServiceImpl.class);
+	final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.US_EAST_1).build();
+	AmazonRekognition client = AmazonRekognitionClientBuilder.standard().build();
+	
 
 	public List<FaceMatchResult> compareFaces(String bucketName) {	
 		logger.debug(" face mactch starts for bucketName="+bucketName);
@@ -59,13 +67,21 @@ public class BiometricServiceImpl  implements BiometricService{
 		return faceMatchResultList;
 	}
 
+	/**
+	 * Returns list of  the summary of  objects stored in an Amazon S3 bucket
+	 * @param bucketName
+	 * @return
+	 */
 	public List<S3ObjectSummary> getS3Objects(String bucketName) {
-		final AmazonS3 s3 = AmazonS3ClientBuilder.standard().withRegion(Regions.US_EAST_1).build();
 		ListObjectsV2Result result = s3.listObjectsV2(bucketName);
 		List<S3ObjectSummary> s3objectsummaryList = result.getObjectSummaries();
 		return s3objectsummaryList;
 	}
 
+	/**
+	 * calculates nomralized score based on max-min normalization
+	 * @param scoreList
+	 */
 	public  void calculateNormalizedScore(List<Score> scoreList) {
 		logger.debug(" Normalization starts");
 		List<Float> dataPoints = new ArrayList<Float>();
@@ -83,8 +99,14 @@ public class BiometricServiceImpl  implements BiometricService{
 		logger.debug(" Normalization ends");
 	}
 
-	public Float compareFace(String bucketName, String sourceImage, String targetImage) {
-		AmazonRekognition client = AmazonRekognitionClientBuilder.standard().build();
+	/**
+	 * compares faces with source image with target image from s3 bucket
+	 * @param bucketName
+	 * @param sourceImage
+	 * @param targetImage
+	 * @return
+	 */
+	public Float compareFace(String bucketName, String sourceImage, String targetImage) {		
 		CompareFacesRequest request = new CompareFacesRequest()
 				.withSourceImage(new Image().withS3Object(new S3Object().withBucket(bucketName).withName(sourceImage)))
 				.withTargetImage(new Image().withS3Object(new S3Object().withBucket(bucketName).withName(targetImage))).withSimilarityThreshold(0f);

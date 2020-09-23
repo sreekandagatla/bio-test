@@ -34,6 +34,10 @@ public class BiometricController {
 	@Autowired
 	BiometricService service;
 	
+	/**
+	 * compare list api
+	 * @return
+	 */
 	@ApiOperation(value = "Compares each image in a s3 bucket to every other image", notes="This endpoint  compares each image in a s3 bucket to every other image\r\n" + 
 			"in the bucket. The result is a list of Comparison objects that holds  similarity score, normalized score for each comparison. <br><br> The returned comparison list MUST contain the same number of elements AND be in the same order as the provided list of templates.")
 	@ApiResponses(value = {
